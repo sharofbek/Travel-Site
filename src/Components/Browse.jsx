@@ -10,7 +10,7 @@ const Browse = () => {
                 <div className='card' data-value='1'>
                     <img src={Hotel} alt="" />
                     <h1 className='cardTitle'>
-                        Hotels
+                        Hotels 
                     </h1>
                 </div>
             </div>
