@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 110vh;
+    background: url('./Assets/Images/1-landing/image\ 1.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    display: flex;
+    width: 93%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+
+    .logo {
+        color: white;
+        font-weight: 700;
+        font-size: 30.42px;
+    }
+
+    .menu {
+        display: flex;
+        width: auto;
+        height: 100%;
+        gap: 30px;
+        align-items: center;
+
+        a {
+            font-size: 18px;
+            height: auto;
+            display: flex;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.607);
+            border: 3px solid transparent;
+
+            &:hover {
+                border-bottom: 3px solid white;
+                transition: .5s;
+            }
+
+            button {
+                background-color: transparent;
+                border: 1px solid transparent;
+                color: rgba(255, 255, 255, 0.559);
+                font-size: 19px;
+            }
+        }
+    }
+}
+
+.block {
+    width: 80%;
+    margin: auto;
+
+    .whole {
+        width: 60%;
+        font-size: 79px;
+        line-height: 91px;
+        font-weight: 700;
+        color: white;
+        margin: 30px 0;
+    }
+
+    .search {
+        width: Fixed (1, 246.51px);
+        height: 66.42px;
+        align-items: center;
+        margin-bottom: 40px;
+        justify-content: space-between;
+        padding: 9px 18px;
+        gap: 8px;
+        border-radius: 18px;
+        background: #FFFFFF66;
+        display: flex;
+        backdrop-filter: blur(15px);
+
+        .inputSearch {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+
+        input {
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 19px;
+
+
+        }
+
+        input::-webkit-input-placeholder {
+            color: white;
+        }
+
+        .icons {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+
+            .chek {
+                display: flex;
+                gap: 5px;
+                color: white;
+                align-items: center;
+
+            }
+
+            button {
+                width: 162px;
+                height: 46px;
+                border-radius: 35px;
+                background-color: #fff;
+                color: #2659C3;
+                font-size: 17px;
+                font-weight: 700;
+                border: 1px solid transparent;
+                cursor: pointer;
+
+                &:hover,
+                :active {
+                    transition: .4s;
+                    background-color: #2659C3;
+                    color: white;
+                }
+
+                &:active {
+                    transform: scale(1.1);
+
+                }
+            }
+        }
+    }
+
+    .categories {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        margin-bottom: 50px;
+
+        h1 {
+            font-size: 35px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .categories-img {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .top {
+                color: rgba(255, 255, 255, 0.482);
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                align-items: center;
+                transition: .4s;
+                border: 2px solid transparent;
+
+                &:hover {
+                    color: white;
+                    border-bottom: 2px solid white;
+                }
+            }
+        }
+    }
+
+    .h1 {
+        color: white;
+        font-size: 35px;
+        margin: 30px 0;
+
+    }
+
+    .vacation {
+        width: 100%;
+        height: auto;
+        display: flex;
+         
+        
+
+        .card {
+            position: relative;
+            width: 343.1790466308594px;
+            height: 221.4058074951172px;
+            border-radius: 9px;
+            margin-bottom: 50px;
+
+            img {
+                width: 343px;
+
+                border-radius: 9px;
+            }
+
+            .cardTitle {
+                padding: 15px;
+                position: absolute;
+                bottom: 5px;
+                color: white;
+            }
+        }
+    }
+}
+
+.offers{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    .card-group{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin: 30px 0;
+
+        .Card{
+            width: 761px;
+            height: 233px;
+            border-radius: 18px;
+            padding: 23px 10px;
+            gap: 27px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 4.428116321563721px 17.712465286254883px 0px #9E9E9E40;
+
+
+
+            img{
+                width: 273px;
+                height: 173px;
+                border-radius: 23px;
+            }
+
+            .card-text{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                justify-content: center;
+                align-items: start;
+
+                p ,span{
+                    color: grey;
+                    font-size: 16px;
+                }
+
+                button{
+                    width: 144px;
+                    height: 48px;
+                    border-radius: 35px;
+                    padding: 18px, 35px, 18px, 35px;
+                    color: white;
+                    background-color: #2659C3;
+                    border: 1px solid transparent;
+                    margin-top: 10px ;
+                    transition: .4s;
+                    &:hover{
+                        background-color: white;
+                        border: 1px solid #2659C3;
+                        color: #2659C3;
+                    }
+                }
+            }
+        }
+    }
+}
