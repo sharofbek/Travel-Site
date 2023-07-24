@@ -2,6 +2,7 @@ import React, { useReducer } from 'react'
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
+import './block.css'
 import Calendar from '../Assets/Images/1-landing/akar-icons_calendar.png'
 import Person from '../Assets/Images/1-landing/fontisto_male.png'
 import Ostrov from '../Assets/Images/1-landing/image 4.png'
