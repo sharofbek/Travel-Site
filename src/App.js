@@ -5,6 +5,8 @@ import Nav from './Components/Nav'
 import Block from './Components/Block'
 import Offers from './Components/Offers'
 import Browse from './Components/Browse'
+import Plan from './Components/Plan'
+import Community from './Components/Community'
 
 const App = () => {
   return (
@@ -13,6 +15,8 @@ const App = () => {
       <Block/>
       <Offers/>
       <Browse/>
+      <Plan/>
+      <Community/>
     </div>
   )
 }
