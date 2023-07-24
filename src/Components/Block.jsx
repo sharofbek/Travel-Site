@@ -19,7 +19,6 @@ import Paris from '../Assets/Images/1-landing/Paris.jpg'
 import Sydney from '../Assets/Images/1-landing/image 18 (1).png'
 import Kerry from '../Assets/Images/1-landing/image 18 (2).png'
 import Bali from '../Assets/Images/1-landing/image 18 (3).png'
-import Bali1 from '../Assets/Images/1-landing/image 18.png'
 
 
 
@@ -67,32 +66,12 @@ const Block = () => {
             text: 'Tropical'
         },
     ]
-    const intialCard = [
-        {
-            imgCard: Bali,
-            cardText: 'Bali, Indonesia'
-        },
-        {
-            imgCard: Kerry,
-            cardText: 'Kerry, Ireland'
-        },
-        {
-            imgCard: Sydney,
-            cardText: 'Sydney, Australia'
-        },
-        {
-            imgCard: Paris,
-            cardText: 'Paris, France'
-        },
 
-
-    ]
 
     const reducer = () => {
 
     }
     const [state, dispatch] = useReducer(reducer, intialReducer)
-    const [card, dispatch1] = useReducer(reducer, intialCard)
 
     const responsive = {
         0: { items: 1 },
@@ -139,7 +118,7 @@ const Block = () => {
             <div className="search">
                 <div className="inputSearch">
                     <img src={require('../Assets/Images/1-landing/akar-icons_search.png')} alt="" />
-                    <input type="text" placeholder='Search destinations, hotels' />
+                    <input type="text" placeholder='Search destinations' />
                 </div>
 
                 <div className='icons'>
@@ -175,13 +154,6 @@ const Block = () => {
 
             <h1 className='h1'>Top Vacation Destinations</h1>
             <div className="vacation">
-                {/*                 
-                {
-                    card.map((card, index) => <div className='card' key={index}>
-                        <img src={card.imgCard} alt="" />
-                        <h2 className='cardTitle'>{card.cardText}</h2>
-                    </div>)
-                } */}
                 <AliceCarousel mouseTracking items={items} responsive={responsive} controlsStrategy="alternate" />
 
 

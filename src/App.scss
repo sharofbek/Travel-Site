@@ -1,9 +1,21 @@
+@font-face {
+    font-family: Helvetica;
+    src: url(./Assets/Fonts/Helvetica/Helvetica.ttf);
+}
+
+@font-face {
+    font-family: Netflix;
+    src: url(./Assets/Fonts/Netflix-Sans/NetflixSansRegular.ttf);
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Helvetica;
 }
+
+
 
 .container {
     width: 100%;
@@ -91,11 +103,15 @@
         }
 
         input {
+            width: 100%;
             background-color: transparent;
             border: none;
             color: white;
             font-size: 19px;
 
+            &:focus {
+                outline: none;
+            }
 
         }
 
@@ -188,8 +204,8 @@
         width: 100%;
         height: auto;
         display: flex;
-         
-        
+
+
 
         .card {
             position: relative;
@@ -214,14 +230,15 @@
     }
 }
 
-.offers{
+.offers {
     width: 80%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    .card-group{
+
+    .card-group {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -229,7 +246,7 @@
         gap: 15px;
         margin: 30px 0;
 
-        .Card{
+        .Card {
             width: 761px;
             height: 233px;
             border-radius: 18px;
@@ -241,25 +258,26 @@
 
 
 
-            img{
+            img {
                 width: 273px;
                 height: 173px;
                 border-radius: 23px;
             }
 
-            .card-text{
+            .card-text {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
                 justify-content: center;
                 align-items: start;
 
-                p ,span{
+                p,
+                span {
                     color: grey;
                     font-size: 16px;
                 }
 
-                button{
+                button {
                     width: 144px;
                     height: 48px;
                     border-radius: 35px;
@@ -267,14 +285,137 @@
                     color: white;
                     background-color: #2659C3;
                     border: 1px solid transparent;
-                    margin-top: 10px ;
+                    margin-top: 10px;
                     transition: .4s;
-                    &:hover{
+
+                    &:hover {
                         background-color: white;
                         border: 1px solid #2659C3;
                         color: #2659C3;
                     }
                 }
+            }
+        }
+    }
+}
+
+.browse {
+    width: 80%;
+    margin: 30px auto;
+
+    .browse-card {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin: 30px 0;
+
+
+        .card {
+            position: relative;
+            width: 343.1790466308594px;
+            height: 221.4058074951172px;
+            border-radius: 9px;
+            margin-bottom: 50px;
+
+            img {
+                width: 343px;
+                height: 233px;
+                border-radius: 9px;
+            }
+
+            .cardTitle {
+                padding: 15px;
+                position: absolute;
+                bottom: 5px;
+                color: white;
+            }
+        }
+
+    }
+}
+
+.PlanBLock {
+    margin: auto;
+    width: 80%;
+    height: 437px;
+    border-radius: 27px;
+    background-image: url('./Assets/Images/1-landing/Plan.png');
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 80px;
+
+    h1 {
+        width: 80%;
+        font-family: Helvetica;
+        font-size: 62px;
+        font-weight: 700;
+        line-height: 71px;
+        text-align: left;
+        color: #fff;
+    }
+
+    p {
+        font-family: Netflix;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 45px;
+        color: white;
+        margin: 15px 0;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+}
+
+.connect {
+    width: 80%;
+    margin: auto;
+    height: 457px;
+
+    h1 {
+        margin: 30px 0;
+        margin-top: 50px;
+    }
+
+    .connect-card {
+        width: 100%;
+        display: flex;
+        margin: 30px 0;
+
+        .CARD {
+            background-color: #fff;
+            width: 378px;
+            height: 361px;
+            border-radius: 18px;
+            padding: 18px;
+            gap: 26px;
+            box-shadow: 0px 4.428116321563721px 17.712465286254883px 0px #9E9E9E40;
+            margin: 20px 0;
+
+            h3 {
+                font-family: Netflix;
+                font-size: 27px;
+                font-weight: 400;
+                line-height: 34px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin-top: 15px;
+                margin-bottom: 10px ;
+
+            }
+
+            p ,span{
+                font-family: Netflix ;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 23px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: rgb(116, 114, 114);
+                margin: 5px 0;
+                
             }
         }
     }
