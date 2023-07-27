@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./Assets/Images/2-landing/mountain_back.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.popular {
+
+    width: 80%;
+    margin: 30px auto;
+    height: 686px;
+
+    h1 {
+        font-family: Helvetica;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 41px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: white;
+        margin: 30px 0;
+    }
+
+
+    .popular-cards {
+        width: 100%;
+        height: auto;
+        display: flex;
+
+        .popular-card {
+            width: 378px;
+            height: 610px;
+            border-radius: 18px;
+            padding-top: 15px;
+            gap: 26.57px;
+            background-color: #fff;
+            box-shadow: 0px 4.428116321563721px 17.712465286254883px 0px #9E9E9E40;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            margin-bottom: 20px;
+
+            .img {
+                // padding-top: 60px;
+                width: 350.355px;
+                height: 262.766px;
+                border-radius: 20px;
+                display: flex;
+                object-fit: cover;
+            }
+
+            .star {
+                width: 100%;
+                text-align: left;
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                padding: 0px 20px;
+
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    align-items: start;
+                    justify-content: space-between;
+
+                    h3 {
+                        color: #000;
+                        font-family: Netflix;
+                        font-size: 26.569px;
+
+                    }
+
+                    p {
+                        color: #000;
+                        opacity: 0.5;
+                        font-family: Netflix;
+                        font-size: 17.712px;
+                    }
+                }
+
+                p {
+                    color: #000;
+                    font-family: Netflix;
+                    font-size: 26.569px;
+                }
+
+            }
+
+            .card-icons {
+                width: 100%;
+                height: auto;
+                justify-content: space-between;
+                align-items: center;
+                display: flex;
+                padding: 0 20px;
+
+                .icon {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 5px;
+                    justify-content: center;
+
+                    p {
+                        color: #000;
+                        font-family: Netflix;
+                        font-size: 13.284px;
+                        opacity: 0.5;
+                    }
+                }
+            }
+
+            ul {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                padding: 0 40px;
+                flex-direction: column;
+                gap: 15px;
+
+                p {
+                    color: #000;
+                    opacity: 0.5;
+                }
+            }
+
+            .price {
+                width: 100%;
+                display: flex;
+                padding: 0 20px;
+                gap: 20px;
+                align-items: center;
+                margin-bottom: 20px;
+
+                p {
+                    color: #000;
+                    font-family: Netflix;
+                    font-size: 17.712px;
+                    text-decoration-line: line-through;
+                }
+
+                h2 {
+                    color: #000;
+                    font-family: Netflix;
+                    font-size: 26.569px;
+
+                    sub {
+                        color: #000;
+                        font-family: Netflix;
+                        font-size: 13.284px;
+                        opacity: .5;
+                    }
+                }
+
+            }
+        }
+
+        .summer-card {
+            width: 378px;
+            height: 610px;
+            border-radius: 18px;
+            padding-top: 15px;
+            background-image: url(./Components2/images/img.png);
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 50px 20px;
+            color: white;
+
+            h1 {
+                font-size: 26.569px;
+            }
+
+            p,
+            h1 {
+                color: #FFF;
+                font-family: Netflix;
+                font-size: 17.712px;
+            }
+        }
+
+    }
+
+
+}

@@ -15,11 +15,11 @@ import Camp from '../Assets/Images/1-landing/image 5.png'
 import Castle from '../Assets/Images/1-landing/image 12.png'
 import Skiing from '../Assets/Images/1-landing/image 15.png'
 import Tropic from '../Assets/Images/1-landing/image 8.png'
-import Paris from '../Assets/Images/1-landing/Paris.jpg'
-import Sydney from '../Assets/Images/1-landing/image 18 (1).png'
-import Kerry from '../Assets/Images/1-landing/image 18 (2).png'
-import Bali from '../Assets/Images/1-landing/image 18 (3).png'
-
+import Beach from '../Assets/Beach.png'
+import Deset from '../Assets/Desert.png'
+import Mount from '../Assets/mountain.png'
+import Pizza from '../Assets/pizza.png'
+import House from '../Assets/boat.png'
 
 
 const Block = () => {
@@ -27,23 +27,33 @@ const Block = () => {
     const intialReducer = [
         {
             img: Ostrov,
-            text: 'Beaches'
+            img1:Beach,
+            text: 'Beaches',
+            text1: 'Beaches'
         },
         {
             img: Desert,
-            text: 'Deserts'
+            img1:Deset,
+            text: 'Deserts',
+            text1: 'Deserts',
         },
         {
             img: Mountain,
-            text: 'Mountains'
+            img1:Mount,
+            text: 'Mountains',
+            text1: 'Mountains',
         },
         {
             img: Cities,
-            text: 'Iconic Cities'
+            img1: Pizza,
+            text: 'Iconic Cities',
+            text1: 'Iconic ',
         },
         {
             img: Boat,
-            text: 'HouseBoats'
+            img1:House,
+            text: 'HouseBoats',
+            text1: 'HouseBoats',
         },
         {
             img: Countryside,
@@ -73,41 +83,6 @@ const Block = () => {
     }
     const [state, dispatch] = useReducer(reducer, intialReducer)
 
-    const responsive = {
-        0: { items: 1 },
-        568: { items: 2 },
-        1024: { items: 3 },
-    };
-
-    const items = [
-        <div className='card' data-value='1'>
-            <img src={Bali} alt="" />
-            <h1 className='cardTitle'>
-                Bali, Indonesia
-            </h1>
-        </div>,
-        <div className='card' data-value='2'>
-            <img src={Kerry} alt="" />
-            <h1 className='cardTitle'>
-                Kerry, Ireland
-            </h1>
-        </div>,
-        <div className='card' data-value='3'>
-            <img src={Sydney} alt="" />
-            <h1 className='cardTitle'>
-                Sydney, Australia
-            </h1>
-        </div>,
-        <div className='card' data-value='4'>
-            <img src={Paris} alt="" />
-            <h1 className='cardTitle'>
-                Paris, France
-            </h1>
-        </div>,
-    
-    ];
-
-
 
 
 
@@ -117,20 +92,22 @@ const Block = () => {
             <h1 className='whole'>The whole world awaits.</h1>
             <div className="search">
                 <div className="inputSearch">
-                    <img src={require('../Assets/Images/1-landing/akar-icons_search.png')} alt="" />
+                    <img src={require('../Assets/Images/1-landing/akar-icons_search.png')} className='searchIcon' alt="" />
                     <input type="text" placeholder='Search destinations' />
                 </div>
 
                 <div className='icons'>
-                    <div className='chek'>
-                        <img src={Calendar} alt="" />
-                        <span>Check in</span>
+                    <div className='mediaIcon'>
+                        <div className='chek chek-1'>
+                            <img src={Calendar} alt="" />
+                            <span>Check in</span>
+                        </div>
+                        <div className='chek'>
+                            <img src={Calendar} alt="" />
+                            <span>Check Out</span>
+                        </div>
                     </div>
-                    <div className='chek'>
-                        <img src={Calendar} alt="" />
-                        <span>Check Out</span>
-                    </div>
-                    <div className="chek">
+                    <div className="chek person">
                         <img src={Person} alt="" />
                         <span>1 room, 2 adults</span>
                     </div>
@@ -144,20 +121,17 @@ const Block = () => {
                 <div className="categories-img">
                     {
                         state.map((item, index) => <div className='top' key={index}>
-                            <img src={item.img} alt="" />
-                            <p>{item.text}</p>
+                            <img src={item.img} alt="" className='img' />
+                            <img src={item.img1} alt="" className='img1' />
+                            <p className='text1'>{item.text1}</p>
+                            <p className='text'>{item.text}</p>
                         </div>)
                     }
 
                 </div>
             </div>
 
-            <h1 className='h1'>Top Vacation Destinations</h1>
-            <div className="vacation">
-                <AliceCarousel mouseTracking items={items} responsive={responsive} controlsStrategy="alternate" />
 
-
-            </div>
         </div>
     )
 }
