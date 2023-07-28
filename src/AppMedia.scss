@@ -10,6 +10,9 @@
     .nav {
         justify-content: center;
 
+        .clock{
+            display: flex;
+        }
         .logo {
             text-align: center;
         }
@@ -283,10 +286,11 @@
         height: auto;
         padding: 20px 0;
 
-        .logo{
+        .logo {
             width: 90%;
             padding-left: 18px;
         }
+
         .support {
             width: 90%;
             margin: auto;
@@ -330,7 +334,35 @@
 
 
     }
+
+
+    .popular {
+        width: 100% !important;
+        height: auto;
+        padding: 0;
+
+        h1 {
+            padding-left: 20px;
+            font-size: 20px;
+            line-height: normal;
+            margin: 0 !important;
+        }
+
+        .popular-cards {
+            margin: auto;
+            width: 100% !important;
+            gap: 35px;
+
+
+            .popular-card {
+                margin: auto;
+                width: 90% !important;
+            }
+        }
+    }
+
 }
+
 .icon-media {
     text-decoration: none;
     width: 64px;
@@ -343,19 +375,18 @@
     transition: .5s;
 
     p {
-        font-family: Netflix
-        ;
+        font-family: Netflix;
         text-align: center;
         color: #2659C3;
         opacity: 1;
     }
 
-    &:hover{
+    &:hover {
         color: #2659C3;
 
     }
 
-     .svg:hover {
+    .svg:hover {
         opacity: 1;
     }
 }
@@ -366,29 +397,4 @@
     opacity: 0.5;
 
 
-}
-
-
-
-.popular{
-    width: 100% !important;
-    height: auto;
-    padding: 0;
-    h1{
-        padding-left: 20px;
-        font-size: 20px;
-        line-height: normal;
-        margin: 0 !important;
-    }
-    .popular-cards{
-        margin: auto;
-        width: 100% !important;
-        gap: 35px ;
-        
-
-        .popular-card{
-            margin: auto;
-            width: 90% !important;
-        }
-    }
 }

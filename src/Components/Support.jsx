@@ -38,10 +38,10 @@ const Support = () => {
 
                 </div>
                 <div className="socials">
-                    <img src={require('../Assets/Images/1-landing/facebook.png')} alt="" />
-                    <img src={require('../Assets/Images/1-landing/instagram.png')} alt="" />
-                    <img src={require('../Assets/Images/1-landing/twitter.png')} alt="" />
-                    <img src={require('../Assets/Images/1-landing/youtube.png')} alt="" />
+                    <Link to={'https://www.facebook.com/sharofbek.xadjimatov.1'}><img src={require('../Assets/Images/1-landing/facebook.png')} alt="" /></Link>
+                    <Link to={'https://www.instagram.com/_.sharofbek._366/'}> <img src={require('../Assets/Images/1-landing/instagram.png')} alt="" /> </Link>
+                    <Link to={'https://twitter.com/_alisher0v1ch__'}> <img src={require('../Assets/Images/1-landing/twitter.png')} alt="" /> </Link>
+                    <Link to={'https://www.youtube.com/channel/UC1XAu8U0bXteioEY5gp8P6Q'}> <img src={require('../Assets/Images/1-landing/youtube.png')} alt="" /> </Link>
                 </div>
             </div>
         </div>

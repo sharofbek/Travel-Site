@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Nav from '../Components/Nav'
 import Block from '../Components/Block'
 import Vacation from '../Components/Vacation'
@@ -12,6 +13,11 @@ import FooterMedia from '../Components/FooterMedia'
 
 
 export default function Home() {
+
+    
+
+
+
     return (
         <div>
             <Nav />
