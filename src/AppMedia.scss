@@ -274,21 +274,29 @@
     }
 
     .Support {
+        width: 100%;
+        height: auto;
         flex-direction: column;
         gap: 30px;
-        padding: 100px;
         justify-content: center;
         align-items: start;
         height: auto;
+        padding: 20px 0;
 
+        .logo{
+            width: 90%;
+            padding-left: 18px;
+        }
         .support {
-            gap: 19px;
-            width: 100%;
+            width: 90%;
+            margin: auto;
+            height: auto;
             justify-content: center;
-            flex-direction: column;
             align-items: start;
+            flex-wrap: wrap;
 
             .help {
+                width: 50%;
                 gap: 9px;
                 justify-content: start;
                 align-items: start;
@@ -296,11 +304,14 @@
         }
 
         .social {
-            width: 100%;
+            margin: auto;
+            width: 90%;
             flex-direction: column;
             justify-content: center;
             align-items: start;
             gap: 10px;
+            padding-bottom: 100px;
+
         }
     }
 
@@ -332,7 +343,8 @@
     transition: .5s;
 
     p {
-        font-family: Netflix;
+        font-family: Netflix
+        ;
         text-align: center;
         color: #2659C3;
         opacity: 1;
@@ -354,4 +366,29 @@
     opacity: 0.5;
 
 
+}
+
+
+
+.popular{
+    width: 100% !important;
+    height: auto;
+    padding: 0;
+    h1{
+        padding-left: 20px;
+        font-size: 20px;
+        line-height: normal;
+        margin: 0 !important;
+    }
+    .popular-cards{
+        margin: auto;
+        width: 100% !important;
+        gap: 35px ;
+        
+
+        .popular-card{
+            margin: auto;
+            width: 90% !important;
+        }
+    }
 }
