@@ -10,9 +10,6 @@
     .nav {
         justify-content: center;
 
-        .clock{
-            display: flex;
-        }
         .logo {
             text-align: center;
         }
@@ -373,28 +370,25 @@
     align-items: center;
     gap: 7px;
     transition: .5s;
-
-    p {
+    h5 {
         font-family: Netflix;
         text-align: center;
         color: #2659C3;
-        opacity: 1;
+        opacity: .5;
+        transition: .5s;
     }
 
-    &:hover {
-        color: #2659C3;
 
-    }
-
-    .svg:hover {
-        opacity: 1;
-    }
 }
 
+.icon-media:hover .svg , .icon-media:hover h5{
+    opacity: 1;
+}
 .svg {
     width: 24px;
     height: 24px;
     opacity: 0.5;
+    transition: .5s;
 
 
 }
