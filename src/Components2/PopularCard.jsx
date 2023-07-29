@@ -1,5 +1,7 @@
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
+import { Fade, Bounce, Zoom } from 'react-reveal';
+
 
 import Swiss from '../Assets/Images/2-landing/Swiss.png'
 import Hallstatt from '../Assets/Images/2-landing/Hallstatt.png'
@@ -645,30 +647,30 @@ const PopularCard = () => {
 
   return (
     <div>
-      <div className="popular">
+      <Fade left cascade><div className="popular">
         <h1>Popular Beach Destinations</h1>
         <div className="popular-cards">
           <AliceCarousel mouseTracking items={items} responsive={responsive} controlsStrategy="alternate" />
         </div>
-      </div>
-      <div className="popular" style={{marginTop:'100px'}}>
+      </div></Fade>
+      <Fade right cascade><div className="popular" style={{marginTop:'100px'}}>
         <h1  style={{color:'black',}}>Recently Viewed</h1>
         <div className="popular-cards">
           <AliceCarousel mouseTracking items={items1} responsive={responsive} controlsStrategy="alternate" />
         </div>
-      </div>
-      <div className="popular" style={{marginTop:'100px'}}>
+      </div></Fade>
+      <Bounce left cascade><div className="popular" style={{marginTop:'100px'}}>
         <h1  style={{color:'black',}}>All Inclusive Packages!</h1>
         <div className="popular-cards">
           <AliceCarousel mouseTracking items={items2} responsive={responsive} controlsStrategy="alternate" />
         </div>
-      </div>
-      <div className="popular" style={{marginTop:'100px', marginBottom:'100px'}}>
+      </div></Bounce>
+      <Bounce right cascade><div className="popular" style={{marginTop:'100px', marginBottom:'100px'}}>
         <h1  style={{color:'black',}}>Honeymoon Freebies Special</h1>
         <div className="popular-cards">
           <AliceCarousel mouseTracking items={items4} responsive={responsive} controlsStrategy="alternate" />
         </div>
-      </div>
+      </div></Bounce>
 
     </div>
   );

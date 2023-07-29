@@ -1,4 +1,6 @@
 import React from 'react'
+import { Fade ,Bounce ,Zoom } from 'react-reveal';
+
 
 import Iphone from '../Assets/Images/1-landing/iPhone 13 Mockup label.png'
 import App from '../Assets/Images/1-landing/image 22.png'
@@ -7,9 +9,9 @@ import Play from '../Assets/Images/1-landing/image 23.png'
 const Footer = () => {
   return (
     <div className='footer'>
-      <div className="iphone"><img src={Iphone} alt="" /></div>
+     <Fade left> <div className="iphone"><img src={Iphone} alt="" /></div></Fade>
 
-      <div className="footer-text">
+      <Fade right cascade><div className="footer-text">
         <h1>Your all-in-one travel app.</h1>
         <p>
           Book flights, hotels, trains & rental cars anywhere in the world in just seconds. Get real-time flight updates, travel info,
@@ -42,6 +44,7 @@ const Footer = () => {
           </div>
         </form>
       </div>
+      </Fade>
     </div>
   )
 }

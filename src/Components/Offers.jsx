@@ -1,4 +1,6 @@
 import React from 'react'
+import { Fade ,Bounce ,Zoom } from 'react-reveal';
+
 
 import Plane from '../Assets/Images/1-landing/plane.png'
 import House from '../Assets/Images/1-landing/house.png'
@@ -6,8 +8,8 @@ import House from '../Assets/Images/1-landing/house.png'
 const Offers = () => {
   return (
     <div className='offers'>
-        <h1 >Offers</h1>
-        <div className="card-group">
+        <Fade left><h1 >Offers</h1></Fade>
+        <Bounce top cascade><div className="card-group">
             <div className="Card">
                 <img src={Plane} alt="" />
                 <div className="card-text">
@@ -26,7 +28,7 @@ const Offers = () => {
                     <button>Book Now</button>
                 </div>
             </div>
-        </div>
+        </div></Bounce>
     </div>
   )
 }

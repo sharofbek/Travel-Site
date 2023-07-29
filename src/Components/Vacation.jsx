@@ -1,6 +1,8 @@
 import React from 'react'
 import AliceCarousel from 'react-alice-carousel'
 import '../App.scss'
+import { Fade ,Bounce ,Zoom } from 'react-reveal';
+
 
 import Paris from '../Assets/Images/1-landing/Paris.jpg'
 import Sydney from '../Assets/Images/1-landing/image 18 (1).png'
@@ -45,12 +47,12 @@ const Vacation = () => {
 
 
     return (
-        <div className='vacation1'>
+        <Bounce bottom cascade><div className='vacation1'>
             <h1 className='h1'>Top Vacation Destinations</h1>
-            <div className="vacation">
+          <div className="vacation">
                 <AliceCarousel mouseTracking items={items} responsive={responsive} controlsStrategy="alternate" />
             </div>
-        </div>
+        </div></Bounce>
     )
 }
 

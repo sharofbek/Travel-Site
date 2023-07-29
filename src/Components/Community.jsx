@@ -2,6 +2,7 @@ import React from 'react'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { Card } from 'antd';
+import {Fade ,LightSpeed } from 'react-reveal'
 
 import India from '../Assets/Images//1-landing/Frame 31 (3).png'
 import Travel from '../Assets/Images//1-landing/Frame 31 (2).png'
@@ -42,12 +43,13 @@ const Community = () => {
         </div>,
     ]
     return (
-        <div className='connect'>
+       <Fade  top cascade> <div className='connect'>
             <h1>Connect with other travellers in our community</h1>
             <div className="connect-card">
                 <AliceCarousel mouseTracking items={items} responsive={responsive} />   
             </div>
         </div>
+        </Fade>
     )
 }
 

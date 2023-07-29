@@ -1,14 +1,16 @@
 import React from 'react'
 import { Link, Route, Routes } from 'react-router-dom'
+import { Fade, Bounce, Zoom } from 'react-reveal';
+
 import App from '../App'
 
 const Support = () => {
     return (
         <div className='Support'>
-            <div className="logo">
+           <Fade left> <div className="logo">
                 <h1>Trxvl.</h1>
-            </div>
-            <div className='support'>
+            </div></Fade>
+           <Bounce right cascade> <div className='support'>
                 <div className="help">
                     <p>Seslendirme ve Alt Jazz</p>
                     <p>Media Market</p>
@@ -30,7 +32,7 @@ const Support = () => {
                     <p>Mullein Koşulları</p>
                     <p>Autumnal Bulgier</p>
                 </div>
-            </div>
+            </div></Bounce>
             <div className="social">
                 <div className="p">
                     <button>Helmet KOD</button>

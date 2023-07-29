@@ -1,6 +1,8 @@
 import React from 'react'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css';
+import { Fade, Bounce, Zoom } from 'react-reveal';
+
 
 import Villas from '../Assets/Images/1-landing/image 18 (4).png'
 import Resorts from '../Assets/Images/1-landing/image 18 (5).png'
@@ -22,12 +24,14 @@ const Browse = () => {
         <div className='card' data-value='4' > <img src={Villas} alt="" /> <h1 className='cardTitle'> Villas </h1> </div>,
     ]
     return (
-        <div className='browse'>
-            <h1>Browse by property type</h1>
+        <Bounce bottom cascade><div className='browse'>
+            <Fade left><h1>Browse by property type</h1></Fade>
+
             <div className="browse-card">
                 <AliceCarousel className='AliceCarousel' mouseTracking responsive={responsive} items={items} />
             </div>
         </div>
+        </Bounce>
     )
 }
 

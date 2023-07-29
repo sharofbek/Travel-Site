@@ -1,6 +1,7 @@
 import React, { useReducer } from 'react'
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
+import { Fade } from 'react-reveal';
 
 import './block.css'
 import Calendar from '../Assets/Images/1-landing/akar-icons_calendar.png'
@@ -27,19 +28,19 @@ const Block = () => {
     const intialReducer = [
         {
             img: Ostrov,
-            img1:Beach,
+            img1: Beach,
             text: 'Beaches',
             text1: 'Beaches'
         },
         {
             img: Desert,
-            img1:Deset,
+            img1: Deset,
             text: 'Deserts',
             text1: 'Deserts',
         },
         {
             img: Mountain,
-            img1:Mount,
+            img1: Mount,
             text: 'Mountains',
             text1: 'Mountains',
         },
@@ -51,7 +52,7 @@ const Block = () => {
         },
         {
             img: Boat,
-            img1:House,
+            img1: House,
             text: 'HouseBoats',
             text1: 'HouseBoats',
         },
@@ -89,15 +90,18 @@ const Block = () => {
 
     return (
         <div className='block'>
-            <h1 className='whole'>The whole world awaits.</h1>
-            <div className="search">
-                <div className="inputSearch">
+            <Fade left>
+                <h1 className='whole'>The whole world awaits.</h1>
+            </Fade>
+            <Fade top cascade><div className="search">
+                <Fade left ><div className="inputSearch">
                     <img src={require('../Assets/Images/1-landing/akar-icons_search.png')} className='searchIcon' alt="" />
                     <input type="text" placeholder='Search destinations' />
                 </div>
+                </Fade>
 
-                <div className='icons'>
-                    <div className='mediaIcon'>
+                <Fade right cascade ><div className='icons'>
+                    <Fade right cascade><div className='mediaIcon'>
                         <div className='chek chek-1'>
                             <img src={Calendar} alt="" />
                             <span>Check in</span>
@@ -106,7 +110,7 @@ const Block = () => {
                             <img src={Calendar} alt="" />
                             <span>Check Out</span>
                         </div>
-                    </div>
+                    </div></Fade>
                     <div className="chek person">
                         <img src={Person} alt="" />
                         <span>1 room, 2 adults</span>
@@ -114,18 +118,20 @@ const Block = () => {
 
                     <button>Search</button>
 
-                </div>
-            </div>
+                </div></Fade>
+            </div></Fade>
             <div className="categories">
-                <h1>Top categories</h1>
+                <Fade left><h1>Top categories</h1></Fade>
                 <div className="categories-img">
                     {
-                        state.map((item, index) => <div className='top' key={index}>
-                            <img src={item.img} alt="" className='img' />
-                            <img src={item.img1} alt="" className='img1' />
-                            <p className='text1'>{item.text1}</p>
-                            <p className='text'>{item.text}</p>
-                        </div>)
+                        state.map((item, index) => <Fade top >
+                            <div className='top' key={index}>
+                                <img src={item.img} alt="" className='img' />
+                                <img src={item.img1} alt="" className='img1' />
+                                <p className='text1'>{item.text1}</p>
+                                <p className='text'>{item.text}</p>
+                            </div>
+                        </Fade>)
                     }
 
                 </div>
